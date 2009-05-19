@@ -1,0 +1,13 @@
+= jQuery Plugin: menu_roll
+
++menu_roll+ is based on a technique I saw used on Chris Woods' portfolio site
+(http://chriswoods.ca). The basic idea is to make each menu item appear to "roll"
+down on mouseover and then "roll" up on mouseout.
+
+I have added the option to specify the easing that is used for the effect as well
+ass the speed and roll over color.
+
+== Usage
+
+To see this in action, download the source files and open the html/index.html
+file in a browser of your choice.
