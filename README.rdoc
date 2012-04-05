@@ -9,5 +9,4 @@ ass the speed and roll over color.
 
 == Usage
 
-To see this in action, <s>download the source files and open the html/index.html
-file in a browser of your choice</s> visit http://schmidt-happens.com/menu_roll.
+To see this in action, visit http://schmidt-happens.com/menu_roll.
