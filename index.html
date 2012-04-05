@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>menu_roll</title>
+
+		<link rel="stylesheet" href="stylesheets/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script src="javascripts/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.utilities.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.menu_roll.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function () {
+				$("#menu1 li").menu_roll();
+				
+				$('#menu2 li').menu_roll({
+					rollOverColor : "orange",
+					speed		  : 500,
+					easing		  : 'easeOutBounce'
+				});
+				
+				$('#menu3 li').menu_roll({
+					rollOverColor : "red",
+					speed		  : 250
+				});
+				
+				$('#menu4 li').menu_roll({
+					rollOverColor : "#99ff00",
+					speed		  : 500,
+					easing		  : 'easeOutCirc'
+				});
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<h1 id="pagetitle">jQuery Plugin: <span>menu_roll</span></h1>
+			
+			<h2>Description</h2>
+			<p>
+				This plugin will allow you to add a "roll" effect to horizontal menu.
+				I was inspired by the menu <strike>found on
+				<a href="http://chriswoods.ca/#/sports/" title="chris woods - can 416.889.7637 - usa 917.587.3558">Chris Woods</a>
+				design portfolio</strike>. This does not do the exact same thing but I think
+				the effect is there.
+			</p>
+			
+			<p>
+			 <strong>Update:</strong> Chris has updated the design of his site since
+			 this was developed.
+			</p>
+			
+			<h2>Options</h2>
+			<p>
+				<table>
+					<thead>
+						<tr>
+							<th>option</th>
+							<th>description</th>
+							<th>default</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>rollOverColor</td>
+							<td>
+								The Color to be applied to the rollover link.
+							</td>
+							<td>#0099ff</td>
+						</tr>
+						<tr>
+							<td>speed</td>
+							<td>
+								The speed (in ms) at which the effect is done.
+							</td>
+							<td>200</td>
+						</tr>
+						<tr>
+							<td>easing</td>
+							<td>
+								You may specify an easing option. See the
+								<a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a>
+								site for details and download.
+							</td>
+							<td>null</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+			
+			<h2>Examples</h2>
+			
+			<ul id="menu1" class="menuroll clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>
+				<pre><code>$('#menu1 li').menu_roll();</code></pre>
+			</p>
+			
+			<ul id="menu2" class="menuroll clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>
+				<pre><code>$('#menu2 li').menu_roll({
+  rollOverColor : "orange",
+  speed : 500,
+  easing : 'easeOutBounce'
+});</code></pre>
+			</p>
+			
+			<ul id="menu3" class="menuroll clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>
+				<pre><code>$('#menu3 li').menu_roll({
+  rollOverColor : "red",
+  speed : 250
+});</code></pre>
+			</p>
+			
+			<ul id="menu4" class="menuroll clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<p>
+				<pre><code>$('#menu4 li').menu_roll({
+  rollOverColor : "#99ff00",
+  speed : 500,
+  easing : 'easeOutCirc'
+});</code></pre>
+			</p>
+		</div>
+	</body>
+</html>
